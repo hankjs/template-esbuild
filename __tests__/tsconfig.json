@@ -1,0 +1,23 @@
+{
+    "extends": "../tsconfig.json",
+    "references": [
+        {
+            "name": "template-rollup-typescript",
+            "path": ".."
+        }
+    ],
+    "compilerOptions": {
+        "types": [
+            "jest",
+			"node"
+        ],
+		"rootDir": ".",
+        "outDir": "../dist/spec",
+        "isolatedModules": false,
+        "noEmit": true
+    },
+    "include": [
+        ".",
+		"../src"
+    ]
+}
